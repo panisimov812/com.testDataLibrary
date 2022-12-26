@@ -8,7 +8,7 @@ public class RandomMaleNameLetterC extends RandomDataHelper {
 
 
     public String randomMaleNameLetterC() {
-        return (getRandomValueFromArray(maleNamesBank.getLetterC()));
+        return (returnRandomValueFromArray(maleNamesBank.getLetterC()));
     }
 
 }

@@ -8,11 +8,11 @@ public class MaleSurname extends RandomDataHelper{
 
 
     public String randomSurnameFromLetterA() {
-        return (getRandomValueFromArray(maleSurnamesBank.getSournamesFromRusLetterA()));
+        return (returnRandomValueFromArray(maleSurnamesBank.getSournamesFromRusLetterA()));
     }
 
     public String randomSurnameFromLetterB() {
-        return (getRandomValueFromArray(maleSurnamesBank.getSournamesFromRusLetterB()));
+        return (returnRandomValueFromArray(maleSurnamesBank.getSournamesFromRusLetterB()));
     }
 
     public String randomSurname() {
@@ -21,18 +21,18 @@ public class MaleSurname extends RandomDataHelper{
     }
 
     public String randomNameFromLetterALowerCase() {
-        return (getRandomValueFromArray(maleSurnamesBank.getSournamesFromRusLetterA()).toLowerCase());
+        return (returnRandomValueFromArray(maleSurnamesBank.getSournamesFromRusLetterA()).toLowerCase());
     }
 
     public String randomNameFromLetterBLowerCase() {
-        return (getRandomValueFromArray(maleSurnamesBank.getSournamesFromRusLetterB()).toLowerCase());
+        return (returnRandomValueFromArray(maleSurnamesBank.getSournamesFromRusLetterB()).toLowerCase());
     }
 
     public String randomNameFromLetterAUpperCase() {
-        return (getRandomValueFromArray(maleSurnamesBank.getSournamesFromRusLetterA()).toUpperCase());
+        return (returnRandomValueFromArray(maleSurnamesBank.getSournamesFromRusLetterA()).toUpperCase());
     }
 
     public String randomNameFromLetterBUpperCase() {
-        return (getRandomValueFromArray(maleSurnamesBank.getSournamesFromRusLetterB()).toUpperCase());
+        return (returnRandomValueFromArray(maleSurnamesBank.getSournamesFromRusLetterB()).toUpperCase());
     }
 }

@@ -1,30 +1,25 @@
 package utils;
 
-import data.namesData.eng.MaleNamesBank;
-import data.namesData.rus.MaleNamesBankRus;
 import model.names.AbcName;
-import model.names.male.models.randomModels.RandomName;
 
 public class DataHelper {
-    static RandomName randomName = new RandomName();
-    static MaleNamesBankRus maleNamesBankRus = new MaleNamesBankRus();
-    static MaleNamesBank maleNamesBank = new MaleNamesBank();
-    static RandomDataHelper randomDataHelper = new RandomDataHelper();
 
-
+    static NameHelper nameHelper = new NameHelper();
+    //todo изменть метод внутри на тот который будет возвращать только по гендеру
     public static String genderDataSelector(String genderValue) {
-        return randomDataHelper.returnRandomValueFromArrays(genderValue, "eng");
+        return NameHelper.returnRandomNameFromAllArraysByGender(genderValue);
+
     }
 
-    public static String genderAndLocalisationDataSelector(String gender, String language) {
-        if (("male".equalsIgnoreCase(gender)) & ("eng".equalsIgnoreCase(language))) {
-            return randomDataHelper.returnRandomValueFromArrays("male", "eng");
-        } else if (("male".equalsIgnoreCase(gender)) & ("rus".equalsIgnoreCase(language))) {
-            return randomDataHelper.returnRandomValueFromArrays("male", "rus");
-        } else if (("female".equalsIgnoreCase(gender)) & ("eng".equalsIgnoreCase(language))) {
-            return randomDataHelper.returnRandomValueFromArrays("female", "eng");
-        } else if (("female".equalsIgnoreCase(gender)) & ("rus".equalsIgnoreCase(language))) {
-            return randomDataHelper.returnRandomValueFromArrays("female", "rus");
+    public static String genderAndLocalisationDataSelector(String gender, String localisation) {
+        if (("male".equalsIgnoreCase(gender)) & ("eng".equalsIgnoreCase(localisation))) {
+            return nameHelper.returnValueByGenderAndLocalization("male", "eng");
+        } else if (("male".equalsIgnoreCase(gender)) & ("rus".equalsIgnoreCase(localisation))) {
+            return nameHelper.returnValueByGenderAndLocalization("male", "rus");
+        } else if (("female".equalsIgnoreCase(gender)) & ("eng".equalsIgnoreCase(localisation))) {
+            return nameHelper.returnValueByGenderAndLocalization("female", "eng");
+        } else if (("female".equalsIgnoreCase(gender)) & ("rus".equalsIgnoreCase(localisation))) {
+            return nameHelper.returnValueByGenderAndLocalization("female", "rus");
         }
         return gender;
     }

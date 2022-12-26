@@ -7,7 +7,7 @@ public class RandomMaleNameLetterG extends RandomDataHelper {
     static MaleNamesBank maleNamesBank = new MaleNamesBank();
 
     public String randomMaleNameLetterG() {
-        return getRandomValueFromArray(maleNamesBank.getLetterG());
+        return returnRandomValueFromArray(maleNamesBank.getLetterG());
     }
 
 }

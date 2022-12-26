@@ -8,7 +8,7 @@ public class RandomRusMaleNameLetterBE extends RandomDataHelper {
     static MaleNamesBankRus maleNamesBankRus = new MaleNamesBankRus();
 
     public String randomRusMaleNameLetterBE() {
-        return getRandomValueFromArray(maleNamesBankRus.getLetterRusBE());
+        return returnRandomValueFromArray(maleNamesBankRus.getLetterRusBE());
     }
 
 }
