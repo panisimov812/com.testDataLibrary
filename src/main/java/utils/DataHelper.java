@@ -1,14 +1,15 @@
 package utils;
 
-import model.names.AbcName;
-
 public class DataHelper {
 
     static NameHelper nameHelper = new NameHelper();
-    //todo изменть метод внутри на тот который будет возвращать только по гендеру
+
+    public static String randomEngName() {
+        return nameHelper.returnRandomMaleEngName();
+    }
+
     public static String genderDataSelector(String genderValue) {
         return NameHelper.returnRandomNameFromAllArraysByGender(genderValue);
-
     }
 
     public static String genderAndLocalisationDataSelector(String gender, String localisation) {
@@ -24,10 +25,5 @@ public class DataHelper {
         return gender;
     }
 
-
-    public static AbcName letterDataSelector(String letter) {
-        if (letter.equalsIgnoreCase("a")) return AbcName.A;
-        return null;
-    }
 
 }

@@ -9,6 +9,27 @@ import java.util.HashMap;
 
 public class NameHelper extends RandomDataHelper {
 
+    //todo дописать реализацию
+    public static String returnNameByLetter(String letter) {
+        if (letter.equalsIgnoreCase("a"))
+            return returnRandomValueFromArray(MaleNamesBank.getLetterA());
+        else if (letter.equalsIgnoreCase("b"))
+            return returnRandomValueFromArray(MaleNamesBank.getLetterB());
+        else if (letter.equalsIgnoreCase("c"))
+            return returnRandomValueFromArray(MaleNamesBank.getLetterC());
+        else if (letter.equalsIgnoreCase("d"))
+            return returnRandomValueFromArray(MaleNamesBank.getLetterD());
+        else if (letter.equalsIgnoreCase("e"))
+            return returnRandomValueFromArray(MaleNamesBank.getLetterE());
+        else if (letter.equalsIgnoreCase("F"))
+            return returnRandomValueFromArray(MaleNamesBank.getLetterF());
+        else if (letter.equalsIgnoreCase("g"))
+            return returnRandomValueFromArray(MaleNamesBank.getLetterG());
+        else {
+            throw new IllegalArgumentException(letter+": is incorrect symbol");
+        }
+    }
+
     public static String returnRandomNameFromAllArraysByGender(String genderValue) {
         HashMap<Integer, Object> namesMap = new HashMap<>();
         if (("male".equalsIgnoreCase(genderValue))) {
