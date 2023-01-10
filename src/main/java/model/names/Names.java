@@ -3,8 +3,10 @@ package model.names;
 public interface Names {
     public String firstName();
 
-    public String firstName(String genderValue);
+    void firstName(String genderValue);
 
-    public String firstName(String gender, String localisation);
+    void firstName(String gender, String localisation);
+
+    void firstNameByLetter(String letter);
 
 }

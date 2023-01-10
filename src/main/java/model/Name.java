@@ -1,10 +1,14 @@
 package model;
 
+import data.namesData.eng.maps.MaleNamesMap;
 import model.names.Names;
-import utils.DataHelper;
-import utils.NameHelper;
+import utils.helpers.DataHelper;
+import utils.helpers.NameHelper;
+import utils.provider.DataProvider;
 
-public class Name implements Names {
+public class Name {
+    //todo возможно следует создать наследие от класса MaleNameMap
+     MaleNamesMap maleNamesMap = new MaleNamesMap();
 
     public String firstName() {
         return DataHelper.randomEngName();
@@ -24,8 +28,12 @@ public class Name implements Names {
         return DataHelper.genderAndLocalisationDataSelector(gender, localisation);
     }
 
+    //todo метод почему то возвращает null, хотя такой же метод в классе DataProvider
+    // возвращает нужное значение. Ищет по букве из мапы имя
+    //Возможно вообще стоит переписать многое на мапы как и хотел заранее и сделать ее srtring object
     public String firstNameByLetter(String letter) {
-        return NameHelper.returnNameByLetter(letter);
+        return MaleNamesMap.getValueByLetter(letter);
+        //return DataProvider.getDataByValue(letter);
     }
 
 
