@@ -1,10 +1,10 @@
 package data.namesData.rus;
 
 import lombok.Getter;
-import model.names.male.models.randomModels.randomEngMaleName.RandomMaleNameLetterA;
+
 
 public class MaleNamesBankRus {
-    static RandomMaleNameLetterA randomMaleNameLetterA = new RandomMaleNameLetterA();
+
 
     @Getter
     static String[] letterRusA = new String[]{"Аарон",
