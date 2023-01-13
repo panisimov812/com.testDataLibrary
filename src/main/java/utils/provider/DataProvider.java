@@ -1,14 +1,11 @@
 package utils.provider;
 
-import data.namesData.eng.MaleNamesBank;
 import lombok.Getter;
 import utils.helpers.RandomDataHelper;
 
 import java.util.HashMap;
-import java.util.Random;
 import java.util.Scanner;
 
-import static utils.helpers.RandomDataHelper.returnRandomValueFromArray;
 import static utils.provider.DataProvider.getColorFromArrays;
 
 
