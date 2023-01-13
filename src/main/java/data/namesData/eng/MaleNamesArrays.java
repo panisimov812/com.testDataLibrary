@@ -1,10 +1,8 @@
 package data.namesData.eng;
 
-import jdk.jfr.Description;
 import lombok.Getter;
-import net.thucydides.core.annotations.Title;
 
-public class MaleNamesBank {
+public class MaleNamesArrays {
 
     @Getter
     static String[] letterA = new String[]{"Alexander",
@@ -390,7 +388,7 @@ public class MaleNamesBank {
             "Robert,",
             "Ryder,",
             "Rylee,",
-            "Remi,",
+            "Remi",
             "Rhett,",
             "Ryker,",
             "Remington,",

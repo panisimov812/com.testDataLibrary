@@ -1,16 +1,12 @@
 package utils.helpers;
 
+import java.util.HashMap;
+
 public class DataHelper {
 
     static NameHelper nameHelper = new NameHelper();
 
-    public static String randomEngName() {
-        return nameHelper.getRandomMaleEngName();
-    }
 
-    public static String genderDataSelector(String genderValue) {
-        return NameHelper.getRandomNameFromAllArraysByGender(genderValue);
-    }
 
     //todo переделать метод с исключениме if
     public static String genderAndLocalisationDataSelector(String gender, String localisation) {

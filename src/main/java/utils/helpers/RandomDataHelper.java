@@ -1,5 +1,9 @@
 package utils.helpers;
 
+
+import org.apache.commons.lang3.ArrayUtils;
+
+
 import java.util.Random;
 
 public class RandomDataHelper {
@@ -10,24 +14,17 @@ public class RandomDataHelper {
         return (randomInteger % 2 == 0);
     }
 
-    public static int returnRandomIntFromRange(int startInt, int endInt) {
+
+    public static int getRandomIntFromRange(int startInt, int endInt) {
         return (int) (startInt + Math.random() * endInt);
     }
 
-    public static String returnRandomValueFromArray(String[] value) {
+    public static String getRandomValueFromArray(String[] value) {
         return value[(int) ((Math.random() * (value.length)))];
     }
 
-    public static String returnRandomValueBetween(String[] firstArray, String[] secondArray) {
-        if (returnEvenOrOddInteger()) {
-            return (returnRandomValueFromArray(firstArray));
-        } else {
-            return (returnRandomValueFromArray(secondArray));
-        }
-    }
-
     public static String returnRandomValuesFrom(String[] firstArray, String[] secondArray) {
-        return returnRandomValueFromArray(firstArray) + " " + returnRandomValueFromArray(secondArray);
+        return getRandomValueFromArray(firstArray) + " " + getRandomValueFromArray(secondArray);
     }
 
 }
