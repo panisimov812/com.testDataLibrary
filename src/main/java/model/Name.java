@@ -1,6 +1,5 @@
 package model;
 
-import data.namesData.eng.maps.MaleEngNamesMap;
 import utils.helpers.DataHelper;
 import utils.helpers.NameHelper;
 
@@ -19,11 +18,7 @@ public class Name extends NameHelper {
     }
 
     public String firstName(String gender, String localisation) {
-        if ((!"female".equalsIgnoreCase(gender)) & (!"male".equalsIgnoreCase(gender)))
-            throw new IllegalArgumentException("Enter correct value, example: male or female");
-        if ((!"eng".equalsIgnoreCase(localisation)) & (!"rus".equalsIgnoreCase(localisation)))
-            throw new IllegalArgumentException("Enter correct value, example: rus or eng");
-        return DataHelper.genderAndLocalisationDataSelector(gender, localisation);
+        return NameHelper.genderAndLocalisationDataSelector(gender, localisation);
     }
 
     public String firstNameByLetter(String letter) {

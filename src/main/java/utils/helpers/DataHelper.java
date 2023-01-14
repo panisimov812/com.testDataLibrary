@@ -1,26 +1,53 @@
 package utils.helpers;
 
-import java.util.HashMap;
+import data.namesData.eng.maps.MaleEngNamesMap;
+
+import static data.namesData.eng.maps.FemaleEngNamesMap.getRandomFemaleNameFromMapWithIntegerKey;
+import static data.namesData.eng.maps.MaleEngNamesMap.getRandomMaleNameFromMapWithIntegerKey;
 
 public class DataHelper {
 
     static NameHelper nameHelper = new NameHelper();
 
-
-
-    //todo переделать метод с исключениме if
-    public static String genderAndLocalisationDataSelector(String gender, String localisation) {
-        if (("male".equalsIgnoreCase(gender)) & ("eng".equalsIgnoreCase(localisation))) {
-            return nameHelper.getValueByGenderAndLocalization("male", "eng");
-        } else if (("male".equalsIgnoreCase(gender)) & ("rus".equalsIgnoreCase(localisation))) {
-            return nameHelper.getValueByGenderAndLocalization("male", "rus");
-        } else if (("female".equalsIgnoreCase(gender)) & ("eng".equalsIgnoreCase(localisation))) {
-            return nameHelper.getValueByGenderAndLocalization("female", "eng");
-        } else if (("female".equalsIgnoreCase(gender)) & ("rus".equalsIgnoreCase(localisation))) {
-            return nameHelper.getValueByGenderAndLocalization("female", "rus");
-        }
-        return gender;
+    public static String equalsThreeValues(String firstReferenceValue, String secondReferenceValue,
+                                           String thirdReferenceValue) {
+        if ((firstReferenceValue.equalsIgnoreCase(thirdReferenceValue)))
+            return getRandomMaleNameFromMapWithIntegerKey();
+        else if (((secondReferenceValue.equalsIgnoreCase(thirdReferenceValue))))
+            return getRandomFemaleNameFromMapWithIntegerKey();
+        else
+            throw new IllegalArgumentException("Value " + "'" + thirdReferenceValue + "'" + " is incorrect, use: male or female");
     }
 
+    public static String equalsSixValues(String firstReferenceValue, String secondReferenceValue,
+                                         String thirdReferenceValue, String fourthReferenceValue,
+                                         String fifthElement, String sixthElement) {
+        if ((firstReferenceValue.equalsIgnoreCase(fifthElement)) & (thirdReferenceValue.equalsIgnoreCase(sixthElement))) {
+            return nameHelper.getValueByGenderAndLocalization(firstReferenceValue, thirdReferenceValue);
+        } else if ((firstReferenceValue.equalsIgnoreCase(fifthElement)) & (fourthReferenceValue.equalsIgnoreCase(sixthElement))) {
+            return nameHelper.getValueByGenderAndLocalization(firstReferenceValue, fourthReferenceValue);
+        } else if ((secondReferenceValue.equalsIgnoreCase(fifthElement)) & (thirdReferenceValue.equalsIgnoreCase(sixthElement))) {
+            return nameHelper.getValueByGenderAndLocalization(secondReferenceValue, thirdReferenceValue);
+        } else if ((secondReferenceValue.equalsIgnoreCase(fifthElement)) & (fourthReferenceValue.equalsIgnoreCase(sixthElement))) {
+            return nameHelper.getValueByGenderAndLocalization(secondReferenceValue, fourthReferenceValue);
+        } else throw new IllegalArgumentException("Value " + "'" + fifthElement + "'" + "" +
+                " is incorrect, use: male or female");
+    }
+
+    public static String comparisonValuesForGenderAndLocalisationDataSelector(String firstReferenceValue, String secondReferenceValue,
+                                                                              String thirdReferenceValue) {
+        return equalsThreeValues(firstReferenceValue, secondReferenceValue, thirdReferenceValue);
+    }
+
+    public static String comparisonValuesForGenderAndLocalisationDataSelector(String firstReferenceValue, String secondReferenceValue,
+                                                                              String thirdReferenceValue, String fourthReferenceValue,
+                                                                              String genderValue, String localisation) {
+        return equalsSixValues(firstReferenceValue,
+                secondReferenceValue,
+                thirdReferenceValue,
+                fourthReferenceValue,
+                genderValue,
+                localisation);
+    }
 
 }

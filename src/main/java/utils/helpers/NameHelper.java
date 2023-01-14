@@ -5,9 +5,9 @@ import data.namesData.rus.MaleNamesBankRus;
 
 import java.util.HashMap;
 
-import static data.namesData.eng.maps.FemaleEngNamesMap.getRandomFemaleNameFromMapWithIntegerKey;
 import static data.namesData.eng.maps.MaleEngNamesMap.getRandomMaleNameFromMapWithIntegerKey;
 import static data.namesData.eng.maps.MaleEngNamesMap.getRandomMaleNameFromMapWithStringKey;
+import static utils.helpers.DataHelper.comparisonValuesForGenderAndLocalisationDataSelector;
 
 public class NameHelper extends RandomDataHelper {
 
@@ -20,9 +20,18 @@ public class NameHelper extends RandomDataHelper {
     }
 
     public static String getRandomNameFromAllArraysByGender(String genderValue) {
-        if (("male".equalsIgnoreCase(genderValue))) return getRandomMaleNameFromMapWithIntegerKey();
-        else if ((("female".equalsIgnoreCase(genderValue)))) return getRandomFemaleNameFromMapWithIntegerKey();
-        else throw new IllegalArgumentException("Value "+ "'" + genderValue + "'" + " is incorrect, use: male or female");
+        return comparisonValuesForGenderAndLocalisationDataSelector("male",
+                "female",
+                genderValue);
+    }
+
+    public static String genderAndLocalisationDataSelector(String genderValue, String localisation) {
+        return comparisonValuesForGenderAndLocalisationDataSelector("male",
+                "female",
+                "eng",
+                "rus",
+                genderValue,
+                localisation);
     }
 
     public String getRandomMaleRusName() {
