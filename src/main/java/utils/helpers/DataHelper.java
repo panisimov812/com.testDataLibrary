@@ -1,11 +1,31 @@
 package utils.helpers;
 
-import static utils.helpers.NameHelper.getRandomFemaleRusName;
-import static utils.helpers.NameHelper.getRandomMaleEngName;
+import java.util.Random;
+
+import static utils.helpers.NameHelper.*;
 
 public class DataHelper {
+    static Random random = new Random();
 
-    static NameHelper nameHelper = new NameHelper();
+    public static int getRandomIntFromRange(int startInt, int endInt) {
+        return (int) (startInt + Math.random() * endInt);
+    }
+
+    public static String getRandomValueFromArray(String[] value) {
+        return value[(int) ((Math.random() * (value.length)))];
+    }
+
+    public static String getValueByGenderAndLocalization(String gender, String localisation) {
+        if (("male".equalsIgnoreCase(gender)) & ("eng".equalsIgnoreCase(localisation)))
+            return getRandomMaleEngName();
+        else if (("male".equalsIgnoreCase(gender)) & ("rus".equalsIgnoreCase(localisation)))
+            return getRandomMaleRusName();
+        else if (("female".equalsIgnoreCase(gender)) & ("eng".equalsIgnoreCase(localisation)))
+            return getRandomFemaleRusName();
+        else if (("female".equalsIgnoreCase(gender)) & ("rus".equalsIgnoreCase(localisation)))
+            return getRandomFemaleRusName();
+        return gender;
+    }
 
     public static String equalsThreeValues(String firstReferenceValue,
                                            String secondReferenceValue,
@@ -21,13 +41,13 @@ public class DataHelper {
                                          String thirdReferenceValue, String fourthReferenceValue,
                                          String fifthElement, String sixthElement) {
         if ((firstReferenceValue.equalsIgnoreCase(fifthElement)) & (thirdReferenceValue.equalsIgnoreCase(sixthElement))) {
-            return nameHelper.getValueByGenderAndLocalization(firstReferenceValue, thirdReferenceValue);
+            return getValueByGenderAndLocalization(firstReferenceValue, thirdReferenceValue);
         } else if ((firstReferenceValue.equalsIgnoreCase(fifthElement)) & (fourthReferenceValue.equalsIgnoreCase(sixthElement))) {
-            return nameHelper.getValueByGenderAndLocalization(firstReferenceValue, fourthReferenceValue);
+            return getValueByGenderAndLocalization(firstReferenceValue, fourthReferenceValue);
         } else if ((secondReferenceValue.equalsIgnoreCase(fifthElement)) & (thirdReferenceValue.equalsIgnoreCase(sixthElement))) {
-            return nameHelper.getValueByGenderAndLocalization(secondReferenceValue, thirdReferenceValue);
+            return getValueByGenderAndLocalization(secondReferenceValue, thirdReferenceValue);
         } else if ((secondReferenceValue.equalsIgnoreCase(fifthElement)) & (fourthReferenceValue.equalsIgnoreCase(sixthElement))) {
-            return nameHelper.getValueByGenderAndLocalization(secondReferenceValue, fourthReferenceValue);
+            return getValueByGenderAndLocalization(secondReferenceValue, fourthReferenceValue);
         } else throw new IllegalArgumentException("Value " + "'" + fifthElement + "'" + "" +
                 " is incorrect, use: male or female");
     }
@@ -52,4 +72,12 @@ public class DataHelper {
                 localisation);
     }
 
+    public static String returnRandomValuesFrom(String[] firstArray, String[] secondArray) {
+        return getRandomValueFromArray(firstArray) + " " + getRandomValueFromArray(secondArray);
+    }
+
+    public static boolean returnEvenOrOddInteger() {
+        int randomInteger = random.nextInt(2);
+        return (randomInteger % 2 == 0);
+    }
 }

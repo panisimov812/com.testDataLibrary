@@ -2,14 +2,13 @@ package utils.helpers;
 
 import data.namesData.eng.FemaleEngNamesArrays;
 import data.namesData.eng.MaleEngNamesArrays;
-import data.namesData.rus.FemaleRusNamesArrays;
 import data.namesData.rus.MaleRusNamesArrays;
 
 import java.util.HashMap;
 
-import static utils.helpers.DataHelper.comparisonValuesForGenderAndLocalisationDataSelector;
+import static utils.helpers.DataHelper.*;
 
-public class NameHelper extends RandomDataHelper {
+public class NameHelper {
 
     public static String getRandomMaleEngName() {
         HashMap<Integer, Object> namesGettersMap = new HashMap<>();
@@ -42,7 +41,7 @@ public class NameHelper extends RandomDataHelper {
         return (String) namesGettersMap.get(getRandomIntFromRange(0, 25));
     }
 
-    public String getRandomMaleRusName() {
+    public static String getRandomMaleRusName() {
         HashMap<Integer, Object> namesMaleRusMap = new HashMap<>();
         namesMaleRusMap.put(0, getRandomValueFromArray(MaleRusNamesArrays.getLetterRusA()));
         namesMaleRusMap.put(1, getRandomValueFromArray(MaleRusNamesArrays.getLetterRusBE()));
@@ -70,6 +69,37 @@ public class NameHelper extends RandomDataHelper {
         namesMaleRusMap.put(26, getRandomValueFromArray(MaleRusNamesArrays.getLetterRusU()));
         namesMaleRusMap.put(27, getRandomValueFromArray(MaleRusNamesArrays.getLetterRusYA()));
         return (String) namesMaleRusMap.get(getRandomIntFromRange(0, 27));
+    }
+
+    public static String getRandomFemaleRusName() {
+        HashMap<Integer, Object> namesGettersMap = new HashMap<>();
+        namesGettersMap.put(0, getRandomValueFromArray(FemaleEngNamesArrays.getLetterA()));
+        namesGettersMap.put(1, getRandomValueFromArray(FemaleEngNamesArrays.getLetterB()));
+        namesGettersMap.put(2, getRandomValueFromArray(FemaleEngNamesArrays.getLetterC()));
+        namesGettersMap.put(3, getRandomValueFromArray(FemaleEngNamesArrays.getLetterD()));
+        namesGettersMap.put(4, getRandomValueFromArray(FemaleEngNamesArrays.getLetterE()));
+        namesGettersMap.put(5, getRandomValueFromArray(FemaleEngNamesArrays.getLetterF()));
+        namesGettersMap.put(6, getRandomValueFromArray(FemaleEngNamesArrays.getLetterG()));
+        namesGettersMap.put(7, getRandomValueFromArray(FemaleEngNamesArrays.getLetterH()));
+        namesGettersMap.put(8, getRandomValueFromArray(FemaleEngNamesArrays.getLetterI()));
+        namesGettersMap.put(9, getRandomValueFromArray(FemaleEngNamesArrays.getLetterJ()));
+        namesGettersMap.put(10, getRandomValueFromArray(FemaleEngNamesArrays.getLetterK()));
+        namesGettersMap.put(11, getRandomValueFromArray(FemaleEngNamesArrays.getLetterL()));
+        namesGettersMap.put(12, getRandomValueFromArray(FemaleEngNamesArrays.getLetterM()));
+        namesGettersMap.put(13, getRandomValueFromArray(FemaleEngNamesArrays.getLetterN()));
+        namesGettersMap.put(14, getRandomValueFromArray(FemaleEngNamesArrays.getLetterO()));
+        namesGettersMap.put(15, getRandomValueFromArray(FemaleEngNamesArrays.getLetterP()));
+        namesGettersMap.put(16, getRandomValueFromArray(FemaleEngNamesArrays.getLetterQ()));
+        namesGettersMap.put(17, getRandomValueFromArray(FemaleEngNamesArrays.getLetterR()));
+        namesGettersMap.put(18, getRandomValueFromArray(FemaleEngNamesArrays.getLetterS()));
+        namesGettersMap.put(19, getRandomValueFromArray(FemaleEngNamesArrays.getLetterT()));
+        namesGettersMap.put(20, getRandomValueFromArray(FemaleEngNamesArrays.getLetterU()));
+        namesGettersMap.put(21, getRandomValueFromArray(FemaleEngNamesArrays.getLetterV()));
+        namesGettersMap.put(22, getRandomValueFromArray(FemaleEngNamesArrays.getLetterW()));
+        namesGettersMap.put(23, getRandomValueFromArray(FemaleEngNamesArrays.getLetterX()));
+        namesGettersMap.put(24, getRandomValueFromArray(FemaleEngNamesArrays.getLetterY()));
+        namesGettersMap.put(25, getRandomValueFromArray(FemaleEngNamesArrays.getLetterZ()));
+        return (String) namesGettersMap.get(getRandomIntFromRange(0, 25));
     }
 
     public static String getValueByLetter(String valueLetter) {
@@ -117,48 +147,4 @@ public class NameHelper extends RandomDataHelper {
                 genderValue,
                 localisation);
     }
-
-    public static String getRandomFemaleRusName() {
-        HashMap<Integer, Object> namesGettersMap = new HashMap<>();
-        namesGettersMap.put(0, getRandomValueFromArray(FemaleEngNamesArrays.getLetterA()));
-        namesGettersMap.put(1, getRandomValueFromArray(FemaleEngNamesArrays.getLetterB()));
-        namesGettersMap.put(2, getRandomValueFromArray(FemaleEngNamesArrays.getLetterC()));
-        namesGettersMap.put(3, getRandomValueFromArray(FemaleEngNamesArrays.getLetterD()));
-        namesGettersMap.put(4, getRandomValueFromArray(FemaleEngNamesArrays.getLetterE()));
-        namesGettersMap.put(5, getRandomValueFromArray(FemaleEngNamesArrays.getLetterF()));
-        namesGettersMap.put(6, getRandomValueFromArray(FemaleEngNamesArrays.getLetterG()));
-        namesGettersMap.put(7, getRandomValueFromArray(FemaleEngNamesArrays.getLetterH()));
-        namesGettersMap.put(8, getRandomValueFromArray(FemaleEngNamesArrays.getLetterI()));
-        namesGettersMap.put(9, getRandomValueFromArray(FemaleEngNamesArrays.getLetterJ()));
-        namesGettersMap.put(10, getRandomValueFromArray(FemaleEngNamesArrays.getLetterK()));
-        namesGettersMap.put(11, getRandomValueFromArray(FemaleEngNamesArrays.getLetterL()));
-        namesGettersMap.put(12, getRandomValueFromArray(FemaleEngNamesArrays.getLetterM()));
-        namesGettersMap.put(13, getRandomValueFromArray(FemaleEngNamesArrays.getLetterN()));
-        namesGettersMap.put(14, getRandomValueFromArray(FemaleEngNamesArrays.getLetterO()));
-        namesGettersMap.put(15, getRandomValueFromArray(FemaleEngNamesArrays.getLetterP()));
-        namesGettersMap.put(16, getRandomValueFromArray(FemaleEngNamesArrays.getLetterQ()));
-        namesGettersMap.put(17, getRandomValueFromArray(FemaleEngNamesArrays.getLetterR()));
-        namesGettersMap.put(18, getRandomValueFromArray(FemaleEngNamesArrays.getLetterS()));
-        namesGettersMap.put(19, getRandomValueFromArray(FemaleEngNamesArrays.getLetterT()));
-        namesGettersMap.put(20, getRandomValueFromArray(FemaleEngNamesArrays.getLetterU()));
-        namesGettersMap.put(21, getRandomValueFromArray(FemaleEngNamesArrays.getLetterV()));
-        namesGettersMap.put(22, getRandomValueFromArray(FemaleEngNamesArrays.getLetterW()));
-        namesGettersMap.put(23, getRandomValueFromArray(FemaleEngNamesArrays.getLetterX()));
-        namesGettersMap.put(24, getRandomValueFromArray(FemaleEngNamesArrays.getLetterY()));
-        namesGettersMap.put(25, getRandomValueFromArray(FemaleEngNamesArrays.getLetterZ()));
-        return (String) namesGettersMap.get(getRandomIntFromRange(0, 25));
-    }
-
-    public String getValueByGenderAndLocalization(String gender, String localisation) {
-        if (("male".equalsIgnoreCase(gender)) & ("eng".equalsIgnoreCase(localisation)))
-            return getRandomMaleEngName();
-        else if (("male".equalsIgnoreCase(gender)) & ("rus".equalsIgnoreCase(localisation)))
-            return getRandomMaleRusName();
-        else if (("female".equalsIgnoreCase(gender)) & ("eng".equalsIgnoreCase(localisation)))
-            return getRandomFemaleRusName();
-        else if (("female".equalsIgnoreCase(gender)) & ("rus".equalsIgnoreCase(localisation)))
-            return getRandomFemaleRusName();
-        return gender;
-    }
-
 }
