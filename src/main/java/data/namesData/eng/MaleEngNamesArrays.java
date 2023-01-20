@@ -2,7 +2,7 @@ package data.namesData.eng;
 
 import lombok.Getter;
 
-public class MaleNamesArrays {
+public class MaleEngNamesArrays {
 
     @Getter
     static String[] letterA = new String[]{"Alexander",
@@ -380,25 +380,25 @@ public class MaleNamesArrays {
             "Quigley"};
 
     @Getter
-    static String[] letterR = new String[]{"Riley,",
-            "Ryan,",
-            "River,",
-            "Rowan,",
-            "Roman,",
-            "Robert,",
-            "Ryder,",
-            "Rylee,",
+    static String[] letterR = new String[]{"Riley",
+            "Ryan",
+            "River",
+            "Rowan",
+            "Roman",
+            "Robert",
+            "Ryder",
+            "Rylee",
             "Remi",
-            "Rhett,",
-            "Ryker,",
-            "Remington,",
-            "Reagan,",
-            "Reese,",
-            "Rory,",
-            "Richard,",
-            "Ryleigh,",
-            "Rafael,",
-            "Remy,",
+            "Rhett",
+            "Ryker",
+            "Remington",
+            "Reagan",
+            "Reese",
+            "Rory",
+            "Richard",
+            "Ryleigh",
+            "Rafael",
+            "Remy",
             "Reign"};
 
     @Getter
@@ -421,7 +421,7 @@ public class MaleNamesArrays {
             "Stephen",
             "Sullivan",
             "Skyler",
-            "Sean,"};
+            "Sean"};
 
     @Getter
     static String[] letterT = new String[]{"Theodore",

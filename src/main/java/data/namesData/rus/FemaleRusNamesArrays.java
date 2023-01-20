@@ -2,7 +2,7 @@ package data.namesData.rus;
 
 import lombok.Getter;
 
-public class FemaleNamesBankRus {
+public class FemaleRusNamesArrays {
 
     @Getter
     static String[] letterA = new String[]{"Анна",

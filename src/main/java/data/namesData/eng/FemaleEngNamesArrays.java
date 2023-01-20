@@ -2,7 +2,7 @@ package data.namesData.eng;
 
 import lombok.Getter;
 
-public class FemaleNamesArrays {
+public class FemaleEngNamesArrays {
 
     @Getter
     static String[] letterA = new String[]{"Amelia",
