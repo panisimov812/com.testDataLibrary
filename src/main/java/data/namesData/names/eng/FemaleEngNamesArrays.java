@@ -1,4 +1,4 @@
-package data.namesData.eng;
+package data.namesData.names.eng;
 
 import lombok.Getter;
 
