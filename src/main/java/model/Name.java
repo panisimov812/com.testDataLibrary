@@ -18,12 +18,11 @@ public class Name extends NameHelper {
     }
 
     public String firstName(String gender, String localisation) {
-        return NameHelper.genderAndLocalisationDataSelector(gender, localisation);
+        return genderAndLocalisationDataSelector(gender, localisation);
     }
 
     public String firstNameByLetter(String letter) {
-        return NameHelper.getValueByLetter(letter.toLowerCase());
+        return getValueByLetter(letter.toLowerCase());
     }
-
 
 }

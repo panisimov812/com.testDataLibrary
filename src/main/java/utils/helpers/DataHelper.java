@@ -1,22 +1,20 @@
 package utils.helpers;
 
-import data.namesData.eng.maps.MaleEngNamesMap;
-
-import static data.namesData.eng.maps.FemaleEngNamesMap.getRandomFemaleNameFromMapWithIntegerKey;
-import static data.namesData.eng.maps.MaleEngNamesMap.getRandomMaleNameFromMapWithIntegerKey;
+import static utils.helpers.NameHelper.getRandomFemaleRusName;
+import static utils.helpers.NameHelper.getRandomMaleEngName;
 
 public class DataHelper {
 
     static NameHelper nameHelper = new NameHelper();
 
-    public static String equalsThreeValues(String firstReferenceValue, String secondReferenceValue,
+    public static String equalsThreeValues(String firstReferenceValue,
+                                           String secondReferenceValue,
                                            String thirdReferenceValue) {
-        if ((firstReferenceValue.equalsIgnoreCase(thirdReferenceValue)))
-            return getRandomMaleNameFromMapWithIntegerKey();
-        else if (((secondReferenceValue.equalsIgnoreCase(thirdReferenceValue))))
-            return getRandomFemaleNameFromMapWithIntegerKey();
+        if ((firstReferenceValue.equalsIgnoreCase(thirdReferenceValue))) return getRandomMaleEngName();
+        else if (((secondReferenceValue.equalsIgnoreCase(thirdReferenceValue)))) return getRandomFemaleRusName();
         else
-            throw new IllegalArgumentException("Value " + "'" + thirdReferenceValue + "'" + " is incorrect, use: male or female");
+            throw new IllegalArgumentException("Value " + "'" + thirdReferenceValue + "'" + " is " +
+                    "incorrect, use: male or female");
     }
 
     public static String equalsSixValues(String firstReferenceValue, String secondReferenceValue,
@@ -34,14 +32,18 @@ public class DataHelper {
                 " is incorrect, use: male or female");
     }
 
-    public static String comparisonValuesForGenderAndLocalisationDataSelector(String firstReferenceValue, String secondReferenceValue,
+    public static String comparisonValuesForGenderAndLocalisationDataSelector(String firstReferenceValue,
+                                                                              String secondReferenceValue,
                                                                               String thirdReferenceValue) {
         return equalsThreeValues(firstReferenceValue, secondReferenceValue, thirdReferenceValue);
     }
 
-    public static String comparisonValuesForGenderAndLocalisationDataSelector(String firstReferenceValue, String secondReferenceValue,
-                                                                              String thirdReferenceValue, String fourthReferenceValue,
-                                                                              String genderValue, String localisation) {
+    public static String comparisonValuesForGenderAndLocalisationDataSelector(String firstReferenceValue,
+                                                                              String secondReferenceValue,
+                                                                              String thirdReferenceValue,
+                                                                              String fourthReferenceValue,
+                                                                              String genderValue,
+                                                                              String localisation) {
         return equalsSixValues(firstReferenceValue,
                 secondReferenceValue,
                 thirdReferenceValue,

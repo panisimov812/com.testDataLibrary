@@ -14,7 +14,6 @@ public class RandomDataHelper {
         return (randomInteger % 2 == 0);
     }
 
-
     public static int getRandomIntFromRange(int startInt, int endInt) {
         return (int) (startInt + Math.random() * endInt);
     }
