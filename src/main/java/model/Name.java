@@ -1,13 +1,11 @@
 package model;
 
-import utils.helpers.DataHelper;
 import utils.helpers.NameHelper;
 
 import java.util.Locale;
 
 public class Name extends NameHelper {
     //todo возможно следует создать наследие от класса MaleNameMap
-
 
     public String firstName() {
         return getRandomMaleEngName();

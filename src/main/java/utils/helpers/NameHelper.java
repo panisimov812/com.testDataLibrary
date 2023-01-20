@@ -1,8 +1,9 @@
 package utils.helpers;
 
-import data.namesData.eng.FemaleEngNamesArrays;
-import data.namesData.eng.MaleEngNamesArrays;
-import data.namesData.rus.MaleRusNamesArrays;
+import data.namesData.names.eng.FemaleEngNamesArrays;
+import data.namesData.names.eng.MaleEngNamesArrays;
+import data.namesData.names.rus.FemaleRusNamesArrays;
+import data.namesData.names.rus.MaleRusNamesArrays;
 
 import java.util.HashMap;
 
@@ -73,33 +74,34 @@ public class NameHelper {
 
     public static String getRandomFemaleRusName() {
         HashMap<Integer, Object> namesGettersMap = new HashMap<>();
-        namesGettersMap.put(0, getRandomValueFromArray(FemaleEngNamesArrays.getLetterA()));
-        namesGettersMap.put(1, getRandomValueFromArray(FemaleEngNamesArrays.getLetterB()));
-        namesGettersMap.put(2, getRandomValueFromArray(FemaleEngNamesArrays.getLetterC()));
-        namesGettersMap.put(3, getRandomValueFromArray(FemaleEngNamesArrays.getLetterD()));
-        namesGettersMap.put(4, getRandomValueFromArray(FemaleEngNamesArrays.getLetterE()));
-        namesGettersMap.put(5, getRandomValueFromArray(FemaleEngNamesArrays.getLetterF()));
-        namesGettersMap.put(6, getRandomValueFromArray(FemaleEngNamesArrays.getLetterG()));
-        namesGettersMap.put(7, getRandomValueFromArray(FemaleEngNamesArrays.getLetterH()));
-        namesGettersMap.put(8, getRandomValueFromArray(FemaleEngNamesArrays.getLetterI()));
-        namesGettersMap.put(9, getRandomValueFromArray(FemaleEngNamesArrays.getLetterJ()));
-        namesGettersMap.put(10, getRandomValueFromArray(FemaleEngNamesArrays.getLetterK()));
-        namesGettersMap.put(11, getRandomValueFromArray(FemaleEngNamesArrays.getLetterL()));
-        namesGettersMap.put(12, getRandomValueFromArray(FemaleEngNamesArrays.getLetterM()));
-        namesGettersMap.put(13, getRandomValueFromArray(FemaleEngNamesArrays.getLetterN()));
-        namesGettersMap.put(14, getRandomValueFromArray(FemaleEngNamesArrays.getLetterO()));
-        namesGettersMap.put(15, getRandomValueFromArray(FemaleEngNamesArrays.getLetterP()));
-        namesGettersMap.put(16, getRandomValueFromArray(FemaleEngNamesArrays.getLetterQ()));
-        namesGettersMap.put(17, getRandomValueFromArray(FemaleEngNamesArrays.getLetterR()));
-        namesGettersMap.put(18, getRandomValueFromArray(FemaleEngNamesArrays.getLetterS()));
-        namesGettersMap.put(19, getRandomValueFromArray(FemaleEngNamesArrays.getLetterT()));
-        namesGettersMap.put(20, getRandomValueFromArray(FemaleEngNamesArrays.getLetterU()));
-        namesGettersMap.put(21, getRandomValueFromArray(FemaleEngNamesArrays.getLetterV()));
-        namesGettersMap.put(22, getRandomValueFromArray(FemaleEngNamesArrays.getLetterW()));
-        namesGettersMap.put(23, getRandomValueFromArray(FemaleEngNamesArrays.getLetterX()));
-        namesGettersMap.put(24, getRandomValueFromArray(FemaleEngNamesArrays.getLetterY()));
-        namesGettersMap.put(25, getRandomValueFromArray(FemaleEngNamesArrays.getLetterZ()));
-        return (String) namesGettersMap.get(getRandomIntFromRange(0, 25));
+        namesGettersMap.put(0, getRandomValueFromArray(FemaleRusNamesArrays.getLetterA()));
+        namesGettersMap.put(1, getRandomValueFromArray(FemaleRusNamesArrays.getLetterBE()));
+        namesGettersMap.put(2, getRandomValueFromArray(FemaleRusNamesArrays.getLeterVE()));
+        namesGettersMap.put(3, getRandomValueFromArray(FemaleRusNamesArrays.getLetterGE()));
+        namesGettersMap.put(4, getRandomValueFromArray(FemaleRusNamesArrays.getLetterDE()));
+        namesGettersMap.put(5, getRandomValueFromArray(FemaleRusNamesArrays.getLetterE()));
+        namesGettersMap.put(6, getRandomValueFromArray(FemaleRusNamesArrays.getLetterJE()));
+        namesGettersMap.put(7, getRandomValueFromArray(FemaleRusNamesArrays.getLetterZE()));
+        namesGettersMap.put(8, getRandomValueFromArray(FemaleRusNamesArrays.getLetterI()));
+        namesGettersMap.put(9, getRandomValueFromArray(FemaleRusNamesArrays.getLetterKE()));
+        namesGettersMap.put(10, getRandomValueFromArray(FemaleRusNamesArrays.getLetterLE()));
+        namesGettersMap.put(11, getRandomValueFromArray(FemaleRusNamesArrays.getLetterM()));
+        namesGettersMap.put(12, getRandomValueFromArray(FemaleRusNamesArrays.getLetterNE()));
+        namesGettersMap.put(13, getRandomValueFromArray(FemaleRusNamesArrays.getLetterO()));
+        namesGettersMap.put(14, getRandomValueFromArray(FemaleRusNamesArrays.getLetterPE()));
+        namesGettersMap.put(15, getRandomValueFromArray(FemaleRusNamesArrays.getLetterRE()));
+        namesGettersMap.put(16, getRandomValueFromArray(FemaleRusNamesArrays.getLetterSE()));
+        namesGettersMap.put(17, getRandomValueFromArray(FemaleRusNamesArrays.getLetterTE()));
+        namesGettersMap.put(18, getRandomValueFromArray(FemaleRusNamesArrays.getLetterU()));
+        namesGettersMap.put(19, getRandomValueFromArray(FemaleRusNamesArrays.getLetterFE()));
+        namesGettersMap.put(20, getRandomValueFromArray(FemaleRusNamesArrays.getLetterU()));
+        namesGettersMap.put(21, getRandomValueFromArray(FemaleRusNamesArrays.getLetterHA()));
+        namesGettersMap.put(22, getRandomValueFromArray(FemaleRusNamesArrays.getLetterCE()));
+        namesGettersMap.put(23, getRandomValueFromArray(FemaleRusNamesArrays.getLetterCHE()));
+        namesGettersMap.put(24, getRandomValueFromArray(FemaleRusNamesArrays.getLetterSHA()));
+        namesGettersMap.put(25, getRandomValueFromArray(FemaleRusNamesArrays.getLetterYU()));
+        namesGettersMap.put(26, getRandomValueFromArray(FemaleRusNamesArrays.getLetterYA()));
+        return (String) namesGettersMap.get(getRandomIntFromRange(0, 26));
     }
 
     public static String getValueByLetter(String valueLetter) {

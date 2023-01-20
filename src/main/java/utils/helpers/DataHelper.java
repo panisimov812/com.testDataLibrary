@@ -1,5 +1,4 @@
 package utils.helpers;
-
 import java.util.Random;
 
 import static utils.helpers.NameHelper.*;
@@ -30,6 +29,7 @@ public class DataHelper {
     public static String equalsThreeValues(String firstReferenceValue,
                                            String secondReferenceValue,
                                            String thirdReferenceValue) {
+
         if ((firstReferenceValue.equalsIgnoreCase(thirdReferenceValue))) return getRandomMaleEngName();
         else if (((secondReferenceValue.equalsIgnoreCase(thirdReferenceValue)))) return getRandomFemaleRusName();
         else
@@ -37,6 +37,7 @@ public class DataHelper {
                     "incorrect, use: male or female");
     }
 
+    //todo првоерить работу с женским именем
     public static String equalsSixValues(String firstReferenceValue, String secondReferenceValue,
                                          String thirdReferenceValue, String fourthReferenceValue,
                                          String fifthElement, String sixthElement) {
@@ -80,4 +81,6 @@ public class DataHelper {
         int randomInteger = random.nextInt(2);
         return (randomInteger % 2 == 0);
     }
+
+
 }
