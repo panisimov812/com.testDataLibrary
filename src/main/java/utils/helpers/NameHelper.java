@@ -1,13 +1,12 @@
 package utils.helpers;
 
-import data.namesData.names.eng.FemaleEngNamesArrays;
 import data.namesData.names.eng.MaleEngNamesArrays;
 import data.namesData.names.rus.FemaleRusNamesArrays;
 import data.namesData.names.rus.MaleRusNamesArrays;
 
 import java.util.HashMap;
 
-import static utils.helpers.DataHelper.*;
+import static utils.helpers.MainHelper.*;
 
 public class NameHelper {
 

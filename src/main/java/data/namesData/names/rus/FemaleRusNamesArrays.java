@@ -16,7 +16,6 @@ public class FemaleRusNamesArrays {
             "Аврора",
             "Александра",};
 
-
     @Getter
     static String[] letterBE = new String[]{"Барбара",
             "Бернадета",

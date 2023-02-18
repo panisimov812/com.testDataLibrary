@@ -2,9 +2,7 @@ package data.namesData.names.rus;
 
 import lombok.Getter;
 
-
 public class MaleRusNamesArrays {
-    //todo сократить все имена до 10
 
     @Getter
     static String[] letterRusA = new String[]{"Аарон",
@@ -19,7 +17,7 @@ public class MaleRusNamesArrays {
             "Авдей"};
 
     @Getter
-    static  String[] letterRusBE = new String[]{"Бадар",
+    static String[] letterRusBE = new String[]{"Бадар",
             "Барни",
             "Бартоломео",
             "Басир",
@@ -31,7 +29,7 @@ public class MaleRusNamesArrays {
             "Берт"};
 
     @Getter
-    static   String[] letterRusVE = new String[]{"Вадим",
+    static String[] letterRusVE = new String[]{"Вадим",
             "Валентин",
             "Валентино",
             "Валерий",
@@ -43,7 +41,7 @@ public class MaleRusNamesArrays {
             "Варфоломей"};
 
     @Getter
-    static   String[] letterRusGE = new String[]{"Габриеле",
+    static String[] letterRusGE = new String[]{"Габриеле",
             "Гавриил",
             "Гай",
             "Галактион",
@@ -55,7 +53,7 @@ public class MaleRusNamesArrays {
             "Гейдар"};
 
     @Getter
-    static   String[] letterRusDE = new String[]{"Давид",
+    static String[] letterRusDE = new String[]{"Давид",
             "Дамдинсурэн",
             "Дамир",
             "Даниил",
@@ -67,7 +65,7 @@ public class MaleRusNamesArrays {
             "Децим"};
 
     @Getter
-    static  String[] letterRusE = new String[]{"Евгений",
+    static String[] letterRusE = new String[]{"Евгений",
             "Евграф",
             "Евдоким",
             "Еврит",
@@ -79,13 +77,13 @@ public class MaleRusNamesArrays {
             "Елеазар"};
 
     @Getter
-    static   String[] letterRusJE = new String[]{"Жан",
+    static String[] letterRusJE = new String[]{"Жан",
             "Ждан",
             "Жером",
             "Жоан"};
 
     @Getter
-    static  String[] letterRusZE = new String[]{"Захар",
+    static String[] letterRusZE = new String[]{"Захар",
             "Захария",
             "Збигнев",
             "Зденек",
@@ -97,7 +95,7 @@ public class MaleRusNamesArrays {
             "Зия"};
 
     @Getter
-    static  String[] letterRusI = new String[]{"Иакинф",
+    static String[] letterRusI = new String[]{"Иакинф",
             "Иан",
             "Ибрагим",
             "Ибрахим",
@@ -109,10 +107,10 @@ public class MaleRusNamesArrays {
             "Израиль"};
 
     @Getter
-    static   String[] letterRusYI = new String[]{"Йюрген"};
+    static String[] letterRusYI = new String[]{"Йюрген"};
 
     @Getter
-    static  String[] letterRusK = new String[]{"Кадваллон",
+    static String[] letterRusK = new String[]{"Кадваллон",
             "Кадир",
             "Казимир",
             "Каликст",
@@ -124,7 +122,7 @@ public class MaleRusNamesArrays {
             "Карлос"};
 
     @Getter
-    static   String[] letterRusEL = new String[]{"Лаврентий",
+    static String[] letterRusEL = new String[]{"Лаврентий",
             "Лавс",
             "Ладислав",
             "Лазарь",
@@ -136,7 +134,7 @@ public class MaleRusNamesArrays {
             "Ленни"};
 
     @Getter
-    static  String[] letterRusM = new String[]{"Макар",
+    static String[] letterRusM = new String[]{"Макар",
             "Максим",
             "Максимиан",
             "Максимилиан",
@@ -148,7 +146,7 @@ public class MaleRusNamesArrays {
             "Мануэль"};
 
     @Getter
-    static  String[] letterRusN = new String[]{"Назар",
+    static String[] letterRusN = new String[]{"Назар",
             "Наиль",
             "Насиф",
             "Натан",
@@ -157,22 +155,10 @@ public class MaleRusNamesArrays {
             "Нафанаил",
             "Нацагдорж",
             "Нестор",
-            "Никандр",
-            "Никанор",
-            "Никита",
-            "Никифор",
-            "Никодим",
-            "Николай",
-            "Нил",
-            "Нильс",
-            "Ноа",
-            "Ной",
-            "Норд",
-            "Нуржан",
-            "Нурлан"};
+            "Никандр"};
 
     @Getter
-    static  String[] letterRusO = new String[]{"Овадья",
+    static String[] letterRusO = new String[]{"Овадья",
             "Оге",
             "Одинец",
             "Октав",
@@ -184,7 +170,7 @@ public class MaleRusNamesArrays {
             "Олег"};
 
     @Getter
-    static  String[] letterRusP = new String[]{"Пабло",
+    static String[] letterRusP = new String[]{"Пабло",
             "Павел",
             "Павлин",
             "Павсикакий",
@@ -196,7 +182,7 @@ public class MaleRusNamesArrays {
             "Паруйр"};
 
     @Getter
-    static   String[] letterRusER = new String[]{"Рагнар",
+    static String[] letterRusER = new String[]{"Рагнар",
             "Рагуил",
             "Радмир",
             "Радослав",
@@ -208,7 +194,7 @@ public class MaleRusNamesArrays {
             "Рашад"};
 
     @Getter
-    static   String[] letterRusES = new String[]{"Сабит",
+    static String[] letterRusES = new String[]{"Сабит",
             "Савва",
             "Савватий",
             "Савелий",
@@ -220,7 +206,7 @@ public class MaleRusNamesArrays {
             "Салих"};
 
     @Getter
-    static  String[] letterRusT = new String[]{"Таврион",
+    static String[] letterRusT = new String[]{"Таврион",
             "Тавус",
             "Тадеуш",
             "Тарас",
@@ -232,7 +218,7 @@ public class MaleRusNamesArrays {
             "Терри"};
 
     @Getter
-    static  String[] letterRusJU = new String[]{"Уве",
+    static String[] letterRusJU = new String[]{"Уве",
             "Уильям",
             "Улдис",
             "Ульрих",
@@ -243,7 +229,7 @@ public class MaleRusNamesArrays {
             "Усман"};
 
     @Getter
-    static  String[] letterRusF = new String[]{"Фавст",
+    static String[] letterRusF = new String[]{"Фавст",
             "Фаддей",
             "Файзулла",
             "Фарид",
@@ -255,7 +241,7 @@ public class MaleRusNamesArrays {
             "Феликс"};
 
     @Getter
-    static  String[] letterRusHA = new String[]{"Хайме",
+    static String[] letterRusHA = new String[]{"Хайме",
             "Ханс",
             "Харальд",
             "Харитон",
@@ -267,10 +253,10 @@ public class MaleRusNamesArrays {
             "Хирам"};
 
     @Getter
-    static  String[] letterRusCE = new String[]{"Цэрэндорж"};
+    static String[] letterRusCE = new String[]{"Цэрэндорж"};
 
     @Getter
-    static  String[] letterRusEA = new String[]{"Эберхард",
+    static String[] letterRusEA = new String[]{"Эберхард",
             "Эдмунд",
             "Эдна",
             "Эдуард",
@@ -282,7 +268,7 @@ public class MaleRusNamesArrays {
             "Энрик"};
 
     @Getter
-    static  String[] letterRusU = new String[]{"Ювеналий",
+    static String[] letterRusU = new String[]{"Ювеналий",
             "Юлиан",
             "Юлий",
             "Юлиус",

@@ -356,7 +356,6 @@ public class MaleEngNamesArrays {
             "Philip",
             "Princeton"};
 
-
     @Getter
     static String[] letterQ = new String[]{"Quinn",
             "Quincy",
@@ -576,4 +575,4 @@ public class MaleEngNamesArrays {
             "Zen",
             "Zackary",
             "Zeppelin"};
-    }
+}
