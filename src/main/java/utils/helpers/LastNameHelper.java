@@ -2,13 +2,11 @@ package utils.helpers;
 
 import data.namesData.lastName.eng.MaleEngLastNamesArrays;
 import data.namesData.names.eng.FemaleEngNamesArrays;
-import data.namesData.names.eng.MaleEngNamesArrays;
 import data.namesData.names.rus.MaleRusNamesArrays;
-import io.cucumber.java.mn.Харин;
 
 import java.util.HashMap;
 
-import static utils.helpers.DataHelper.*;
+import static utils.helpers.MainHelper.*;
 
 public class LastNameHelper {
 

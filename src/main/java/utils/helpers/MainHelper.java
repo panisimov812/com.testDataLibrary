@@ -1,10 +1,8 @@
 package utils.helpers;
-import java.util.Random;
 
 import static utils.helpers.NameHelper.*;
 
-public class DataHelper {
-    static Random random = new Random();
+public class MainHelper {
 
     public static int getRandomIntFromRange(int startInt, int endInt) {
         return (int) (startInt + Math.random() * endInt);
@@ -76,11 +74,10 @@ public class DataHelper {
     public static String returnRandomValuesFrom(String[] firstArray, String[] secondArray) {
         return getRandomValueFromArray(firstArray) + " " + getRandomValueFromArray(secondArray);
     }
-
-    public static boolean returnEvenOrOddInteger() {
-        int randomInteger = random.nextInt(2);
-        return (randomInteger % 2 == 0);
-    }
-
+//
+//    public static boolean returnEvenOrOddInteger() {
+//        int randomInteger = random.nextInt(2);
+//        return (randomInteger % 2 == 0);
+//    }
 
 }

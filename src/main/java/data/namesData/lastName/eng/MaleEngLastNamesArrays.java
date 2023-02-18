@@ -2,7 +2,6 @@ package data.namesData.lastName.eng;
 
 import lombok.Getter;
 
-
 public class MaleEngLastNamesArrays {
 
     @Getter
@@ -52,7 +51,7 @@ public class MaleEngLastNamesArrays {
             "Daby",
             "Dacanay",
             "Dace"};
-    //TODO добавить фамилии с запятыми и пробелами и имена
+
     @Getter
     static String[] letterE = new String[]{"Eacret",
             "Eaddy",
@@ -196,7 +195,6 @@ public class MaleEngLastNamesArrays {
             "Pacer",
             "Pacetti"};
 
-
     @Getter
     static String[] letterQ = new String[]{"Qin",
             "Qiu",
@@ -316,3 +314,4 @@ public class MaleEngLastNamesArrays {
             "Zaccardi",
             "Zaccardo"};
 }
+//TODO добавить фамилии с запятыми и пробелами и имена

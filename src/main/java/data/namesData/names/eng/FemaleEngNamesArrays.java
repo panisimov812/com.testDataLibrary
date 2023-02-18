@@ -356,7 +356,6 @@ public class FemaleEngNamesArrays {
             "Persephone",
             "Paulina"};
 
-
     @Getter
     static String[] letterQ = new String[]{"Quinn",
             "Quincy",
