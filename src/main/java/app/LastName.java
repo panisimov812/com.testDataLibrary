@@ -1,9 +1,10 @@
 package app;
 
-import static utils.helpers.LastNameHelper.*;
-import static utils.helpers.NameHelper.genderAndLocalisationDataSelector;
+import utils.helpers.DataHelper;
 
-public class LastName {
+import static utils.helpers.DataHelper.genderAndLocalisationDataSelector;
+
+public class LastName extends DataHelper {
 
     public String lastName() {
         return getRandomMaleEngLastName();
@@ -18,6 +19,6 @@ public class LastName {
     }
 
     public String lastNameByLetter(String letter) {
-        return getValueByLetter(letter.toLowerCase());
+        return getValueByLetterForLastName(letter.toLowerCase());
     }
 }

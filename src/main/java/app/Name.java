@@ -1,6 +1,6 @@
 package app;
 
-import static utils.helpers.NameHelper.*;
+import static utils.helpers.DataHelper.*;
 
 public class Name {
 
