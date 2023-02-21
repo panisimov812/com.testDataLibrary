@@ -1,10 +1,9 @@
 package app;
 
-import utils.helpers.DataHelper;
+import static utils.helpers.DataHelper.*;
 
-import static utils.helpers.DataHelper.genderAndLocalisationDataSelector;
+public class LastName {
 
-public class LastName extends DataHelper {
 
     public String lastName() {
         return getRandomMaleEngLastName();
