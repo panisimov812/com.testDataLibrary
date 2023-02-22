@@ -1,7 +1,7 @@
-package utils.helpers;
+package utils.value_helpers;
 
-import static utils.helpers.DataHelper.*;
-import static utils.helpers.RandomValuesHelpers.getRandomValueFromArray;
+import static utils.data_helpers.DataHelper.*;
+import static utils.value_helpers.RandomValuesHelpers.getRandomValueFromArray;
 
 public class ValuesHelper {
 

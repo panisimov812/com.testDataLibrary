@@ -1,65 +1,64 @@
 package app;
 
-import static utils.helpers.DataHelper.*;
-import static utils.helpers.DataHelper.getValueByLetter;
+import utils.value_helpers.NamesValuesHelpers;
 
-public class TestDataApp {
+public class TestDataApp extends NamesValuesHelpers {
 
     public String firstName() {
-        return getRandomMaleEngName();
+        return getFirstName();
     }
 
     public String firstName(String genderValue) {
-        return getRandomNameFromAllArraysByGender(genderValue);
+        return getFirstName(genderValue);
     }
 
     public String firstName(String gender, String localisation) {
-        return genderAndLocalisationDataSelector(gender, localisation);
+        return getFirstName(gender, localisation);
     }
 
     public String firstNameByLetter(String letter) {
-        return getValueByLetter(letter.toLowerCase());
+        return getFirstNameByLetter(letter);
     }
 
     public String lastName() {
-        return getRandomMaleEngLastName();
+        return getLastName();
     }
 
     public String lastName(String genderValue) {
-        return getRandomLastNameFromAllArraysByGender(genderValue);
+        return getLastName(genderValue);
     }
 
     public String lastName(String gender, String localisation) {
-        return genderAndLocalisationDataSelector(gender, localisation);
+        return getLastName(gender,localisation);
     }
 
     public String lastNameByLetter(String letter) {
-        return getValueByLetterForLastName(letter.toLowerCase());
+        return getLastNameByLetter(letter);
     }
 
     public String fullName() {
-        return firstName() + " " + this.lastName();
+        return getFullName();
     }
 
     public String fullName(String gender) {
-        return this.firstName(gender) + " " + this.lastName(gender);
+        return getFullName(gender);
     }
 
     public String fullName(String gender, String localisation) {
-        return this.firstName(gender, localisation) + " " + this.lastName(gender, localisation);
+        return getFullName(gender,localisation);
     }
 
     public String fullNameInverse() {
-        return lastName() + " " + firstName();
+        return getFullNameInverse();
     }
 
     public String fullNameInverse(String gender) {
-        return lastName(gender) + " " + firstName(gender);
+        return getFullNameInverse(gender);
 
     }
 
     public String fullNameInverse(String gender, String localisation) {
-        return lastName(gender, localisation) + " " + firstName(gender, localisation);
+        return getFullName(gender,localisation);
 
     }
 }

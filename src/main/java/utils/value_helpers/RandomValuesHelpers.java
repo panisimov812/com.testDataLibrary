@@ -1,7 +1,4 @@
-package utils.helpers;
-
-import static utils.helpers.DataHelper.*;
-import static utils.helpers.DataHelper.getRandomFemaleRusName;
+package utils.value_helpers;
 
 public class RandomValuesHelpers {
 

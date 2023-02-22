@@ -1,4 +1,4 @@
-package utils.helpers;
+package utils.data_helpers;
 
 import data.namesData.lastName.eng.MaleEngLastNamesArrays;
 import data.namesData.names.eng.FemaleEngNamesArrays;
@@ -8,9 +8,9 @@ import data.namesData.names.rus.MaleRusNamesArrays;
 
 import java.util.HashMap;
 
-import static utils.helpers.ValuesHelper.*;
-import static utils.helpers.RandomValuesHelpers.getRandomIntFromRange;
-import static utils.helpers.RandomValuesHelpers.getRandomValueFromArray;
+import static utils.value_helpers.ValuesHelper.*;
+import static utils.value_helpers.RandomValuesHelpers.getRandomIntFromRange;
+import static utils.value_helpers.RandomValuesHelpers.getRandomValueFromArray;
 
 public class DataHelper {
 
